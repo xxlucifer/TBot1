@@ -1,5 +1,4 @@
 version: "3.1"
-
 nlu:
 - intent: greet
   examples: |
@@ -16,7 +15,7 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
+    - yo
 - intent: goodbye
   examples: |
     - cu
@@ -29,7 +28,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
 - intent: affirm
   examples: |
     - yes
@@ -38,7 +36,6 @@ nlu:
     - of course
     - that sounds good
     - correct
-
 - intent: deny
   examples: |
     - no
@@ -48,44 +45,25 @@ nlu:
     - don't like that
     - no way
     - not really
-
-- intent: mood_great
+- intent: check_balance
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
+    - What is my account balance?
+    - Can you tell me my balance?
+    - How much money do I have?
+    - check account balance
+    - account balance
+- intent: transaction_history
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
+    - Show my transaction history
+    - I want to see my recent transactions
+    - i want to check transaction history
+    - transaction history
+    - check transaction history
+- intent: provide_info
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - My name is [Alice](name)
+    - My account number is [12345](account_number)
+    - My phone number is [555-123-4567](phone_number)
+    - My name is [Ram](name), account no is [34452](account_number), phone number is [9851256789](phone_number)
+    - name [Shyam](name), acc no [25543](account_number), ph no [9876457345](phone_number)
+    - [John](name) [88888](account_number)
